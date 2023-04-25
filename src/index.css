@@ -27,7 +27,7 @@ body::-webkit-scrollbar{
 .rigth{
   display: flex;
   align-items: center;
-  column-gap: 20px;
+  column-gap: 20px; 
 }
 .body{
   height: 88vh;
@@ -131,4 +131,79 @@ body::-webkit-scrollbar{
   color: rgb(176, 176, 176);
   text-align: center;
   padding: 10px;
+}
+
+/* 
+---------card-section----------- */
+.cards{
+  padding: 20px;
+  border-radius: 20px;
+}
+.cards:hover{
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.504);
+
+}
+.cards-box{
+  display: grid;
+  grid-template-columns:  1fr 1fr 1fr;
+  max-width: 800px;
+  margin: auto;
+}
+.image-box{
+  overflow: hidden;
+  border-radius: 10px;
+}
+.title{
+  font-weight: 800;
+}
+.btn{
+  color: white;
+  padding: 5px 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+  width: 100%;
+}
+.explore{
+  font-size: 30px;
+  font-weight: 800;
+  text-align: center;
+  padding: 10px;
+
+}
+.togel-btn{
+  background-color: #e97630;
+  margin: 10px;
+  padding: 5px 20px;
+  color: white;
+   border-radius: 10px;
+   
+}
+.togel-btn:hover{
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.504);
+}
+.btns{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+/* -------single van card ---------- */
+.card-body{
+  max-width: 800px;
+  margin: 30px auto;
+
+}
+.image-boxx{
+   border-radius: 20px;
+   overflow: hidden;
+   height: 400px;
+
+
+}
+.imagnes{
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  object-position: center;
+  
 }

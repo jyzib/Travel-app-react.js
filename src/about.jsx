@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+import Footer from "./footer"
 const about = () => {
     const currentyear = (new Date()).getFullYear()
   return (
@@ -11,11 +13,9 @@ const about = () => {
      </div>
      <div className="box">
         <p>Your destination is wating <br /> your van is ready</p>
-        <button className="explore-van" >Explore our van</button>
+       <Link to={'/van'} ><button className="explore-van" >Explore our van</button></Link> 
      </div>
-     <div className="footer-about">
-     &#169;{currentyear} #VAINS
-     </div>
+  <Footer/>
     </div>
   )
 }
