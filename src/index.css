@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body{
+  scrollbar-color: red;
+}
+body::-webkit-scrollbar{
+   display: none;
+}
+
+.navbar{
+  display: flex;
+ justify-content: space-between;
+ padding: 20px;
+ background-color: #fef4ea;
+ box-shadow: 0 0 10px ;
+ 
+}
+.logo{
+  font-weight: 900;
+  font-size:30px;
+}
+.rigth{
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+.body{
+  height: 88vh;
+   background-image: url(https://static.boredpanda.com/blog/wp-content/uploads/2018/01/living-in-van-life-travel-photography-fb25.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-blend-mode: darken;
+   background-color: rgba(0, 0, 0, 0.504);
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+}
+.header-text{
+  color: white;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 700;
+
+}
+.header-paragraph{
+    color: white;
+} 
+.find-van{
+  background-color: #e97630;
+  width: 60%;
+  padding: 10px;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 10px;
+  margin-top: 60px;
+}
+.header-text-area{
+  width: 90%;
+}
+.footer{
+  color: rgb(183, 183, 183);
+  
+  
+  
+}
+.test-body{
+  display: flex;
+  flex-direction: column;
+  padding: 30px 20px;
+  align-items: center;
+  justify-content: center;
+  row-gap: 10px;
+  width: 80%;
+  margin-top: 60px;
+}
+
+/*    ---------ABOUT SECTION ------ */
+.bg-image{
+  height: 50vh;
+  background-image: url(https://assets.cntraveller.in/photos/615449211550911ec11e0ddb/master/w_1944,h_1280,c_limit/Carvaa.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: darken;
+  background-color: rgba(0, 0, 0, 0.305);
+
+}
+.about-qout{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  row-gap: 10px;
+  margin-top: 20px;
+}
+.qoute{
+  font-size: 30px;
+  font-weight: 700;
+}
+.box{
+  background-color: #d2a16c;
+  width: 80%;
+  margin: 20px auto;
+  padding: 30px;
+  border-radius: 14px;
+  font-size: 20px;
+  font-weight: 600;
+  display: flex;
+  column-gap: 20px;
+  justify-content: space-between;
+
+}
+.explore-van{
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px;
+  
+}
+.footer-about{
+  background-color: black;
+  color: rgb(176, 176, 176);
+  text-align: center;
+  padding: 10px;
+}
