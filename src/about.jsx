@@ -15,7 +15,7 @@ const about = () => {
         <p>Your destination is wating <br /> your van is ready</p>
        <Link to={'/van'} ><button className="explore-van" >Explore our van</button></Link> 
      </div>
-  <Footer/>
+
     </div>
   )
 }
