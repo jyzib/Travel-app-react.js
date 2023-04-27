@@ -1,12 +1,14 @@
 import React from 'react'
-import { useParams } from 'react-router-dom'
+import { useParams,Link ,useLocation} from 'react-router-dom'
 import { useState,useEffect } from 'react'
 import './server'
 import Footer from './footer'
 
 const Vandetails = () => {
+     const locationsearch = useLocation()
+    //  console.log(locationsearch.state.search)
     const pramas = useParams()
-    console.log(pramas.id) 
+    // console.log(pramas.id) 
     const [data,setdata ] = useState(null)
     useEffect(()=>{
         const fitchdata = async()=>{
@@ -25,9 +27,23 @@ const Vandetails = () => {
           
     //     }
     //  })
-  console.log(data)
+
+function typesearch(){
+   const x = locationsearch.state.search
+    
+
+    let y = x.indexOf('=')
+     return (x.slice(y+1))
+     
+}
+console.log(typesearch())
+
+console.log(locationsearch.state.type)
+
+
   return (
     <div>
+      {<Link to={`..?${locationsearch.state.search}`} relative='path' > go to {locationsearch.state.type || 'all'} vans </Link>}
         {data ? 
         <div className="card-body">
             <div className="image-boxx"><img className='imagnes' src={data.imageUrl} alt="" /></div>
@@ -36,7 +52,7 @@ const Vandetails = () => {
             <p>${data.price}/day</p>
             <p>{data.description}</p>
 
-            <Footer/>
+         
         </div>
        :'loading...'}
     

@@ -176,6 +176,9 @@ body{
    border-radius: 10px;
    
 }
+.bt-color{
+  background-color: rgb(8, 79, 8);
+}
 .togel-btn:hover{
    box-shadow: 0 0 10px rgba(0, 0, 0, 0.504);
 }

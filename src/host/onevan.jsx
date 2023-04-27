@@ -46,6 +46,7 @@ const onevan = () => {
        <div className="dep-body">
          <NavLink end to={'.'} style={({isActive})=>isActive?{color:"green"}:{color:null}} >Details</NavLink>
          <NavLink style={({isActive})=>isActive?{color:"green"}:{color:null}} to={'pricing'} >pricing</NavLink>
+         <NavLink style={({isActive})=>isActive?{color:"green"}:{color:null}} to={'image'} >Photos</NavLink>
          <Outlet context={{data}} />
        </div>
      

@@ -13,6 +13,7 @@ import Vans from './host/vans'
 import Onevan from './host/onevan'
 import Pricing from './pricing'
 import Details from './details'
+import OnevanImage from './host/onevanImage'
 function App() {
 
   // console.log('ji')
@@ -34,7 +35,7 @@ function App() {
               <Route path='vans/:id' element={<Onevan/>} >
                <Route index element={<Details/>} />
                <Route path='pricing' element={<Pricing/>} />
-
+               <Route path='image' element={<OnevanImage/>} />
               </Route>
               <Route path='review' element={<Review />} />
             </Route>
