@@ -10,6 +10,7 @@ const Van = () => {
   const [searchprams, setsearchprams] = useSearchParams()
   const typefilter = searchprams.get('type')
   console.log(typefilter)
+  console.log(searchprams.toString())
   useEffect(() => {
     const loadsvsn = async()=>{
       const data = await dataapi()

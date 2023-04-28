@@ -8,7 +8,7 @@ const about = () => {
      <div className="bg-image">
      </div>
      <div className="about-qout">
-        <p className="qoute">Don't squeeze in sidean when you could relax in van! </p>
+        <p className="qoute">Dont squeeze in sidean when you could relax in van! </p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium ☺️corrupti, alias voluptate vitae eaque debitis fuga! Minima voluptatum ipsam temporibus atque quos officiis eius maiores necessitatibus illum. Labore, facilis ea?</p>
      </div>
      <div className="box">

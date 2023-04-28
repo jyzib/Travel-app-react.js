@@ -5,8 +5,8 @@ const pricing = () => {
     console.log(data)
   return (
     <div>
-     <h1>{data.price
-}</h1>
+     <h1>{data.price}</h1>
+     {/* pricing section */}
     </div>
   )
 }
